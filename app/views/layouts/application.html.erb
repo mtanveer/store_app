@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper"><!-- #wrapper -->
+
+		<header><!-- header -->
+			<h1>Kyocera parts list</h1>
+		</header><!-- end of header -->
+		<nav><!-- top nav -->
+				<%= render 'products/shared/navbar' %>
+			</nav><!-- end of top nav -->
+
+	
+		<section id="main"><!-- #main content and sidebar area -->
+			
+	
+			<aside id="sidebar1"><!-- sidebar1 -->
+				<%= render 'products/shared/sidebar1' %>
+			</aside><!--end of sidebar 1 -->
+			<section id="content"><!-- #content -->
+				<%= yield %>
+			</section><!-- end of #content -->
+	
+			<aside id="sidebar2"><!-- sidebar2 -->
+				<!--<%= render 'products/shared/asidebar2' %>-->
+			</aside><!-- end of sidebar -->
+	
+
+		</section><!-- end of #main content and sidebar-->
+
+			
+</div><!-- #wrapper -->
+
+</body>
+</html>

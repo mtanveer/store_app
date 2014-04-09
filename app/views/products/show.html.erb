@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @product.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @product.model %>
+</p>
+
+<p>
+  <strong>Pm:</strong>
+  <%= @product.pm %>
+</p>
+
+<p>
+  <strong>Drum:</strong>
+  <%= @product.drum %>
+</p>
+
+<p>
+  <strong>Developer:</strong>
+  <%= @product.developer %>
+</p>
+
+<p>
+  <strong>Fuser:</strong>
+  <%= @product.fuser %>
+</p>
+
+<p>
+  <strong>Life:</strong>
+  <%= @product.life %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
